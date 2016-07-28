@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import { Alert, Button, ButtonGroup } from 'react-bootstrap'
+import { Alert, Button, ButtonGroup, Label } from 'react-bootstrap'
 import Link from './Link'
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -115,7 +115,8 @@ const Workspace = React.createClass({
     return (
       <div className="panel panel-default Workspace">
         <div className="panel-heading">
-          Workspace
+            <i className="fa fa-flask"/>
+            SQL Lab  <Label bsStyle="warning">BETA</Label>
         </div>
         <div className="panel-body">
           <div>
